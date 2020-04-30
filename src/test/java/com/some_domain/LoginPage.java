@@ -21,7 +21,7 @@ public class LoginPage {
     }
 
     public void login(String login, String password) {
-        String loginPageURL = "https://www.bookvoed.ru/my/auth?backTo=%2Fmy";
+        String loginPageURL = "http://some_domain/login";
         driver.get(loginPageURL);
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(loginFieldLocator));
